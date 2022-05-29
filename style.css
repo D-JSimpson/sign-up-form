@@ -1,0 +1,22 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+#img,
+#form-container{
+    height: 100%;
+}
+#img{
+    background-color: aqua;
+    width: 35%;
+}
+#form-container{
+    background-color: brown;
+    width: 65%;
+}
