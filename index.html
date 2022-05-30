@@ -19,36 +19,55 @@
         <p id = "credit">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Unsplash</a></p>
     </div>
 
-    <div id="form-container">
+    <div id="form-section">
         
-        <header>
+        <header id="header">
             <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
             <h2>You <em>know</em> you want to.</h2>
         </header>
 
-        <form action="">
-            <label for="firstName">First Name</label>
-            <input type="text" name="firstName" id="firstName">
+        <div id="form-container">
+            <h3>Let's do this!</h3>
+            <form action="" id ="form">
+                
+                <span class="row">
+                    <span class="form-field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </span>
+                    <span class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </span>
+                </span>
 
-            <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" id="lastName">
+                <span class="row">
+                    <span class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </span>
+                    <span class="form-field">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" name="number" id="number">
+                    </span>
+                </span>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+                <span class="row">
+                    <span class="form-field">
+                        <label for="pwd">Password</label>
+                        <input type="password" name ="password" id="pwd">
+                    </span>
+                    <span class="form-field">
+                        <label for="cpwd">Confirm Password</label>
+                        <input type="password" name = "confirmPassword" id="cpwd">
+                    </span>
+                </span>
+            </form>
+        </div>
 
-            <label for="number">Phone Number</label>
-            <input type="tel" name="number" id="number">
-
-            <label for="pwd">Password</label>
-            <input type="password" name ="password" id="pwd">
-
-            <label for="cpwd">Confirm Password</label>
-            <input type="password" name = "confirmPassword" id="cpwd">
-        </form>
-
-        <footer>
+        <footer id="footer">
             <button>Create Account</button>
-            <span>Already have an account? <span>Log in</span></span>
+            <span>Already have an account? <span id="log-in">Log in</span></span>
         </footer>
     </div>
     
