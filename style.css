@@ -8,15 +8,54 @@ body{
     margin-left: 10vw;
     margin-right: 10vw;
 }
-#img,
+@font-face {
+    font-family: nordic;
+    src: url(Norse-Bold.otf);
+}
+h1{
+    font-family: nordic;
+    color: white;
+    font-size: max(1.5rem, 5vw, 3rem);
+}
+#imgs{
+    display: flex;
+    position: relative;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+#imgs,
 #form-container{
     height: 100%;
 }
-#img{
-    background-color: aqua;
-    width: 35%;
-}
 #form-container{
     background-color: brown;
-    width: 65%;
+    width: 60%;
+}
+#main-bg{
+    width: 100%;
+}
+#logo-container{
+    position: absolute;
+    top: 25%;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#logo{
+    height: 100%;
+}
+#credit{
+    position: absolute;
+    bottom:0;
+    color: white;
+}
+#imgs a{
+    color: white;
 }
