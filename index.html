@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -33,40 +34,42 @@
                 <span class="row">
                     <span class="form-field">
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" placeholder=" " id="firstName" required>
                     </span>
                     <span class="form-field">
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName"  placeholder=" " id="lastName" required>
                     </span>
                 </span>
 
                 <span class="row">
                     <span class="form-field">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email"  placeholder=" " id="email" required>
                     </span>
                     <span class="form-field">
                         <label for="number">Phone Number</label>
-                        <input type="tel" name="number" id="number">
+                        <input type="tel" name="number" id="number" placeholder=" " pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" title="Please enter a valid phone number">
                     </span>
                 </span>
 
                 <span class="row">
                     <span class="form-field">
                         <label for="pwd">Password</label>
-                        <input type="password" name ="password" id="pwd">
+                        <input type="password" name ="password" id="pwd" placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required title="At least 6 characters, At least 1 uppercase character, At least 1 lowercase character, At least 1 number">
                     </span>
                     <span class="form-field">
                         <label for="cpwd">Confirm Password</label>
-                        <input type="password" name = "confirmPassword" id="cpwd">
+                        <input type="password" name = "confirmPassword" id="cpwd" placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required title="At least 6 characters, At least 1 uppercase character, At least 1 lowercase character, At least 1 number">
                     </span>
                 </span>
+                <span id="match">Passwords Do Not Match</span>
+                <span id="requirements">At least 6 characters, At least 1 uppercase character, At least 1 lowercase character, At least 1 number"</span>
             </form>
         </div>
 
         <footer id="footer">
-            <button>Create Account</button>
+            <button type="submit" form="form">Create Account</button>
             <span>Already have an account? <span id="log-in">Log in</span></span>
         </footer>
     </div>

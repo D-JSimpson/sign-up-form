@@ -146,3 +146,18 @@ font-weight: 900;
     height: 100%;
     justify-content: center;
 }
+.error{
+    border: 2px solid orangered;
+    background-color: pink;
+}
+.valid{
+    background-color: lightgreen;
+    transition: 0.28s;
+}
+#match,
+#requirements{
+overflow: hidden;
+height: 0;
+transition: 0.28s;
+color: red;
+}
