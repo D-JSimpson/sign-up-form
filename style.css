@@ -30,8 +30,10 @@ h1{
     height: 100%;
 }
 #form-container{
-    background-color: brown;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 #main-bg{
     width: 100%;
